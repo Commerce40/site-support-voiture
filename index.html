@@ -130,7 +130,7 @@ src="https://www.facebook.com/tr?id=1331480167511386&ev=PageView&noscript=1"
           <p class="text-sm text-blue-700">Recevez notre guide PDF : <strong>"Les 5 Apps Indispensables pour la Route au Sénégal"</strong>, envoyé directement après votre commande.</p>
         </div>
       </div>
-      <a href="https://wa.me/221764669165?text=Bonjour%2C+je+suis+int%C3%A9ress%C3%A9(e)+par+l'offre+de+lancement+pour+le+support+ONESAM+OS-F32+%C3%A0+6500+FCFA+%2B+le+guide+PDF+offert." class="w-full block gradient-bg text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg hover:opacity-90 transition transform hover:scale-105 mb-10">
+      <a href="https://wa.me/221764669165?text=Bonjour%2C+je+suis+int%C3%A9ress%C3%A9(e)+par+l'offre+de+lancement+pour+le+support+ONESAM+OS-F32+%C3%A0+6500+FCFA+%2B+le+guide+PDF+offert." id="bouton-commande-offre" class="w-full block gradient-bg text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg hover:opacity-90 transition transform hover:scale-105 mb-10">
         ✅ Je Commande + Je reçois mon Bonus
       </a>
       <h3 class="text-xl font-semibold mb-6">Votre Achat 100% Serein</h3>
@@ -176,7 +176,7 @@ src="https://www.facebook.com/tr?id=1331480167511386&ev=PageView&noscript=1"
   <section class="text-center px-5 py-16">
     <h2 class="text-2xl font-bold mb-4">N'attendez pas la prochaine frayeur.</h2>
     <p class="text-lg text-gray-700 mb-8">Conduisez en toute sécurité et gardez votre smartphone à portée de vue. <br>Commandez votre ONESAM OS-F32 dès aujourd'hui.</p>
-    <a href="https://wa.me/221764669165?text=Bonjour%2C+je+suis+pr%C3%AAt+%C3%A0+commander+mon+support+ONESAM+OS-F32+%C3%A0+6500+FCFA+%2B+le+guide+PDF+offert." class="gradient-bg text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:opacity-90 transition transform hover:scale-105">
+    <a href="https://wa.me/221764669165?text=Bonjour%2C+je+suis+pr%C3%AAt+%C3%A0+commander+mon+support+ONESAM+OS-F32+%C3%A0+6500+FCFA+%2B+le+guide+PDF+offert." id="bouton-commande-final" class="gradient-bg text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:opacity-90 transition transform hover:scale-105">
       ✅ Je Profite de l'Offre
     </a>
   </section>
@@ -190,9 +190,36 @@ src="https://www.facebook.com/tr?id=1331480167511386&ev=PageView&noscript=1"
   <a href="https://wa.me/221764669165?text=Bonjour%2C+j'ai+une+question+concernant+le+support+ONESAM+OS-F32" class="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition flex items-center justify-center">
     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6"><path d="M20.52 3.48A11.92 11.92 0 0012 0C5.37 0 0 5.37 0 12a11.9 11.9 0 001.64 6l-1.05 3.85 3.94-1a11.9 11.9 0 005.47 1.39h.01C18.63 22.24 24 16.87 24 10.24a11.93 11.93 0 00-3.48-6.76zM12 21a9.8 9.8 0 01-5-1.36l-.36-.22-2.34.6.62-2.25-.23-.36A9.85 9.85 0 012.2 12 9.8 9.8 0 0112 2.2 9.8 9.8 0 0121.8 12 9.8 9.8 0 0112 21zm5.05-7.47c-.27-.14-1.61-.79-1.86-.88s-.43-.14-.61.14-.7.88-.86 1.06-.32.21-.59.07a8.03 8.03 0 01-2.36-1.45 8.9 8.9 0 01-1.63-2.02c-.17-.28 0-.43.13-.57.13-.13.28-.32.41-.48.13-.16.17-.28.26-.47.09-.19.04-.36-.02-.5s-.61-1.47-.83-2-.45-.46-.61-.47h-.52c-.16 0-.42.06-.64.28s-.84.82-.84 2 .86 2.33.98 2.49 1.7 2.59 4.13 3.63a13.8 13.8 0 001.37.5 3.3 3.3 0 001.52.1c.46-.07 1.61-.66 1.84-1.3.23-.64.23-1.19.16-1.3-.06-.11-.23-.18-.5-.32z"/></svg>
   </a>
+<script>
+  // Attend que la page soit entièrement chargée
+  document.addEventListener('DOMContentLoaded', function() {
+    
+    // Trouve le premier bouton de commande par son ID
+    var boutonOffre = document.getElementById('bouton-commande-offre');
+    // Trouve le deuxième bouton de commande par son ID
+    var boutonFinal = document.getElementById('bouton-commande-final');
 
+    // Fonction à exécuter lors d'un clic
+    function suivreClicCommande() {
+      // Envoie l'événement 'Lead' à Meta
+      fbq('track', 'Lead');
+      console.log('Événement Pixel "Lead" envoyé !');
+    }
+
+    // Attache la fonction au clic sur le premier bouton
+    if (boutonOffre) {
+      boutonOffre.addEventListener('click', suivreClicCommande);
+    }
+
+    // Attache la fonction au clic sur le deuxième bouton
+    if (boutonFinal) {
+      boutonFinal.addEventListener('click', suivreClicCommande);
+    }
+  });
+</script>
 </body>
 </html>
+
 
 
 
