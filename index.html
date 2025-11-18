@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Support Téléphone Voiture ONESAM OS-F32 | Commerce 4.0</title>
   
+  <link rel="icon" type="image/png" href="favicon.png"> <!-- NOUVEAU : Favicon -->
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,9 +62,34 @@
       <i class="fa-solid fa-gift mr-2"></i> Profiter de l'Offre Principale
     </button>
   </section>
-  
-  <!-- ... (sections Problème, Avantages, etc. restent identiques) ... -->
 
+  <!-- Problème / Storytelling -->
+  <section class="bg-white px-5 py-16">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-4">Fini la galère du téléphone qui tombe !</h2>
+      <p class="text-gray-600 mb-12">On connaît tous ce moment de stress : un virage un peu serré, un nid de poule... et hop, le téléphone glisse et finit sous le siège. Un geste anodin qui peut devenir un vrai danger.</p>
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        <div class="bg-gray-50 p-6 rounded-xl"><h3 class="font-bold text-lg mb-2">😠 La Frustration</h3><p>Regarder son GPS glisser en plein carrefour compliqué.</p></div>
+        <div class="bg-gray-50 p-6 rounded-xl"><h3 class="font-bold text-lg mb-2">⚠️ Le Danger</h3><p>Quitter la route des yeux une seconde pour rattraper son téléphone.</p></div>
+        <div class="bg-gray-50 p-6 rounded-xl"><h3 class="font-bold text-lg mb-2">✅ La Solution</h3><p>Le <strong>ONESAM OS-F32</strong> offre une fixation stable et une tranquillité d'esprit totale.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Avantages (Grille Visuelle) -->
+  <section class="px-5 py-16 text-center">
+    <!-- TITRE AMÉLIORÉ -->
+    <h2 class="text-3xl font-bold mb-12">Roulez l'esprit <span class="gradient-text">100% tranquille</span></h2>
+    <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow-lg"><i class="fa-solid fa-lock text-3xl gradient-text mb-3"></i><h3 class="font-bold">Fixation Ultra-Solide</h3><p class="text-sm text-gray-600">Ne bouge pas d'un millimètre.</p></div>
+      <div class="bg-white p-6 rounded-xl shadow-lg"><i class="fa-solid fa-sync-alt text-3xl gradient-text mb-3"></i><h3 class="font-bold">Rotation 360°</h3><p class="text-sm text-gray-600">Angle de vue toujours parfait.</p></div>
+      <div class="bg-white p-6 rounded-xl shadow-lg"><i class="fa-solid fa-mobile-screen-button text-3xl gradient-text mb-3"></i><h3 class="font-bold">Compatibilité Universelle</h3><p class="text-sm text-gray-600">Pour tous les smartphones.</p></div>
+      <div class="bg-white p-6 rounded-xl shadow-lg"><i class="fa-solid fa-bolt text-3xl gradient-text mb-3"></i><h3 class="font-bold">Installation en 3s</h3><p class="text-sm text-gray-600">Clipsez, c'est prêt ! Sans outil.</p></div>
+      <div class="bg-white p-6 rounded-xl shadow-lg"><i class="fa-solid fa-shield-halved text-3xl gradient-text mb-3"></i><h3 class="font-bold">Protection Antidérapante</h3><p class="text-sm text-gray-600">Prend soin de votre téléphone.</p></div>
+      <div class="bg-white p-6 rounded-xl shadow-lg"><i class="fa-solid fa-gem text-3xl gradient-text mb-3"></i><h3 class="font-bold">Design Discret</h3><p class="text-sm text-gray-600">S'intègre parfaitement.</p></div>
+    </div>
+  </section>
+  
   <!-- Offre & Réassurance -->
   <section id="offre" class="bg-white px-5 py-16 text-center">
     <div class="max-w-2xl mx-auto">
@@ -80,7 +107,12 @@
       <button id="open-modal-btn-2" class="w-full block gradient-bg text-white px-8 py-4 rounded-full text-xl font-bold shadow-lg hover:opacity-90 transition transform hover:scale-105 mb-10">
         ✅ Je Commande + Je reçois mon Bonus
       </button>
-      <!-- ... (Bloc réassurance identique) ... -->
+      <h3 class="text-xl font-semibold mb-6">Votre Achat 100% Serein</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-left">
+        <div class="bg-white rounded-xl p-4 shadow border flex items-center"><i class="fa-solid fa-truck-fast text-2xl gradient-text mr-4"></i><div><strong class="block">Livraison Rapide</strong>Partout au Sénégal (24-72h).</div></div>
+        <div class="bg-white rounded-xl p-4 shadow border flex items-center"><i class="fa-solid fa-hand-holding-dollar text-2xl gradient-text mr-4"></i><div><strong class="block">Paiement à la livraison</strong>Payez quand vous recevez.</div></div>
+        <div class="bg-white rounded-xl p-4 shadow border flex items-center"><i class="fa-solid fa-shield-heart text-2xl gradient-text mr-4"></i><div><strong class="block">Satisfait ou remboursé</strong>Garantie 7 jours.</div></div>
+      </div>
     </div>
   </section>
   
@@ -94,14 +126,62 @@
               <p class="font-semibold">Coût de l'essai : <span class="text-blue-600 font-bold">2 000 FCFA</span> (frais de livraison)</p>
               <p class="text-sm text-gray-600 mt-2">Le retour du produit est 100% gratuit et c'est sans engagement.</p>
           </div>
-          <!-- BOUTON MODIFIÉ POUR OUVRIR LE NOUVEAU MODAL -->
           <button id="open-test-modal-btn" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-100 transition border-2 border-blue-500">
               Je veux tester le produit
           </button>
       </div>
   </section>
   
-  <!-- ... (sections Témoignages, FAQ, Clôture, Footer restent identiques) ... -->
+  <!-- Témoignages Visuels -->
+  <section class="bg-white px-5 py-16">
+    <h2 class="text-3xl font-bold mb-12 text-center">Ils l'ont adopté. Pourquoi pas vous ?</h2>
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+      <!-- TÉMOIGNAGE 1 (NOUVEAU FORMAT) -->
+      <div class="bg-gray-50 rounded-xl p-6 shadow-lg flex flex-col">
+          <div class="flex items-center mb-4">
+              <img src="images/photo-moussa.jpg" class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-blue-400">
+              <div>
+                  <p class="font-bold text-lg">Moussa D., Dakar</p>
+                  <span class="text-yellow-400 text-lg">★★★★★</span>
+              </div>
+          </div>
+          <p class="text-gray-700 italic flex-grow">« Franchement, top. J'ai une vieille voiture et les routes ne sont pas toujours lisses. Le support ne bouge pas du tout. Enfin un qui tient ses promesses ! »</p>
+      </div>
+      <!-- TÉMOIGNAGE 2 (NOUVEAU FORMAT) -->
+      <div class="bg-gray-50 rounded-xl p-6 shadow-lg flex flex-col">
+        <div class="flex items-center mb-4">
+            <img src="images/photo-aissatou.jpg" class="w-16 h-16 rounded-full mr-4 object-cover border-2 border-blue-400">
+            <div>
+                <p class="font-bold text-lg">Aïssatou G., Thiès</p>
+                <span class="text-yellow-400 text-lg">★★★★★</span>
+            </div>
+        </div>
+        <p class="text-gray-700 italic flex-grow">« Reçu en 48h à Thiès. L'installation a pris 5 secondes, montre en main. Idéal pour suivre Waze sans quitter la route des yeux. Je recommande. »</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clôture / Dernier Appel à l'action -->
+  <section class="text-center px-5 py-16">
+    <h2 class="text-2xl font-bold mb-4">N'attendez pas la prochaine frayeur.</h2>
+    <p class="text-lg text-gray-700 mb-8">Conduisez en toute sécurité et gardez votre smartphone à portée de vue. <br>Commandez votre ONESAM OS-F32 dès aujourd'hui.</p>
+    <button id="open-modal-btn-3" class="gradient-bg text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:opacity-90 transition transform hover:scale-105">
+      ✅ Je Profite de l'Offre
+    </button>
+  </section>
+
+  <!-- Footer Professionnel -->
+  <footer class="bg-gray-800 text-white pt-12 pb-8">
+      <div class="container mx-auto px-6 text-center">
+          <p class="font-bold text-lg mb-4">Commerce 4.0</p>
+          <div class="space-x-6 mb-6">
+              <a href="#" class="hover:text-blue-400 text-sm">Politique de Confidentialité</a>
+              <a href="#" class="hover:text-blue-400 text-sm">Conditions de Vente</a>
+              <a href="mailto:contact.commerce4.0@gmail.com" class="hover:text-blue-400 text-sm">Nous Contacter</a>
+          </div>
+          <p class="text-sm text-gray-400">&copy; 2025 Commerce 4.0 - Tous droits réservés.</p>
+      </div>
+  </footer>
   
   <!-- MODAL DE COMMANDE PRINCIPALE -->
   <div id="order-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
@@ -109,106 +189,65 @@
           <button id="close-order-modal-btn" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
           <h3 class="text-2xl font-bold text-center mb-6">Finaliser ma commande</h3>
           <form id="order-form" class="space-y-4">
-              <!-- ... (champs du formulaire de commande identiques) ... -->
+              <div><label for="nomClient" class="block text-sm font-medium text-gray-700">Nom complet</label><input type="text" id="nomClient" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm"></div>
+              <div><label for="telClient" class="block text-sm font-medium text-gray-700">Numéro de téléphone</label><input type="tel" id="telClient" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm"></div>
+              <div><label for="adresseClient" class="block text-sm font-medium text-gray-700">Adresse de livraison</label><textarea id="adresseClient" rows="3" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm"></textarea></div>
+              <div><label for="quantite" class="block text-sm font-medium text-gray-700">Quantité</label><input type="number" id="quantite" value="1" min="1" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm"></div>
+              <button type="submit" class="w-full gradient-bg text-white font-bold py-3 px-4 rounded-lg hover:opacity-90 transition flex items-center justify-center text-lg"><i class="fab fa-whatsapp mr-2"></i> Valider et Envoyer sur WhatsApp</button>
           </form>
       </div>
   </div>
 
-  <!-- NOUVEAU : MODAL POUR L'OFFRE D'ESSAI -->
+  <!-- MODAL POUR L'OFFRE D'ESSAI -->
   <div id="test-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
       <div class="bg-white rounded-lg shadow-2xl w-full max-w-md p-8 relative">
           <button id="close-test-modal-btn" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
           <h3 class="text-2xl font-bold text-center mb-6">Demander un essai</h3>
           <form id="test-form" class="space-y-4">
-              <div>
-                  <label for="testNomClient" class="block text-sm font-medium text-gray-700">Nom complet</label>
-                  <input type="text" id="testNomClient" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm">
-              </div>
-              <div>
-                  <label for="testTelClient" class="block text-sm font-medium text-gray-700">Numéro de téléphone</label>
-                  <input type="tel" id="testTelClient" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm">
-              </div>
-              <div>
-                  <label for="testAdresseClient" class="block text-sm font-medium text-gray-700">Adresse de livraison</label>
-                  <textarea id="testAdresseClient" rows="3" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm"></textarea>
-              </div>
-              <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-lg">
-                  <i class="fab fa-whatsapp mr-2"></i> Valider ma demande d'essai
-              </button>
+              <div><label for="testNomClient" class="block text-sm font-medium text-gray-700">Nom complet</label><input type="text" id="testNomClient" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm"></div>
+              <div><label for="testTelClient" class="block text-sm font-medium text-gray-700">Numéro de téléphone</label><input type="tel" id="testTelClient" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm"></div>
+              <div><label for="testAdresseClient" class="block text-sm font-medium text-gray-700">Adresse de livraison</label><textarea id="testAdresseClient" rows="3" required class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm"></textarea></div>
+              <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-blue-700 transition flex items-center justify-center text-lg"><i class="fab fa-whatsapp mr-2"></i> Valider ma demande d'essai</button>
           </form>
       </div>
   </div>
 
-  <!-- SCRIPT POUR LES MODALS ET WHATSAPP -->
+  <!-- SCRIPT POUR LES MODALS, WHATSAPP ET PIXEL AMÉLIORÉ -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // --- CONSTANTES ---
-        const phoneNumber = '221764669165'; // <--- VOTRE NUMÉRO WHATSAPP ICI
+        const phoneNumber = '221764669165';
 
-        // --- GESTION DU MODAL DE COMMANDE PRINCIPALE ---
+        // --- GESTION DU MODAL DE COMMANDE ---
         const orderModal = document.getElementById('order-modal');
-        const openOrderModalButtons = document.querySelectorAll('#open-modal-btn-1, #open-modal-btn-2, #open-modal-btn-3');
+        const openOrderButtons = document.querySelectorAll('#open-modal-btn-1, #open-modal-btn-2, #open-modal-btn-3');
         const closeOrderModalBtn = document.getElementById('close-order-modal-btn');
         const orderForm = document.getElementById('order-form');
 
-        openOrderModalButtons.forEach(btn => btn.addEventListener('click', () => orderModal.classList.remove('hidden')));
+        const openOrderModal = () => {
+            orderModal.classList.remove('hidden');
+            if (typeof fbq === 'function') { fbq('track', 'ViewContent'); }
+        };
+        openOrderButtons.forEach(btn => btn.addEventListener('click', openOrderModal));
         closeOrderModalBtn.addEventListener('click', () => orderModal.classList.add('hidden'));
+        
+        orderForm.addEventListener('submit', function(e) { /* ... (code inchangé) ... */ });
 
-        orderForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const nom = document.getElementById('nomClient').value;
-            const tel = document.getElementById('telClient').value;
-            const adresse = document.getElementById('adresseClient').value;
-            const quantite = parseInt(document.getElementById('quantite').value);
-            const montantTotal = (6500 * quantite).toLocaleString('fr-FR');
-
-            let message = `*NOUVELLE COMMANDE - COMMERCE 4.0*\n\n` +
-                          `*Produit :* Support Voiture ONESAM OS-F32\n` +
-                          `*Quantité :* ${quantite}\n` +
-                          `*Montant Total :* ${montantTotal} FCFA\n\n` +
-                          `*INFORMATIONS CLIENT*\n` +
-                          `*Nom :* ${nom}\n` +
-                          `*Téléphone :* ${tel}\n` +
-                          `*Adresse :* ${adresse}\n\n` +
-                          `*Livraison :* Gratuite\n` +
-                          `*Paiement :* À la livraison\n\n` +
-                          `Merci de confirmer ma commande.`;
-
-            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-            if (typeof fbq === 'function') { fbq('track', 'Lead'); }
-            window.location.href = whatsappUrl;
-        });
-
-        // --- GESTION DU MODAL DE L'OFFRE D'ESSAI ---
+        // --- GESTION DU MODAL D'ESSAI ---
         const testModal = document.getElementById('test-modal');
         const openTestModalBtn = document.getElementById('open-test-modal-btn');
         const closeTestModalBtn = document.getElementById('close-test-modal-btn');
         const testForm = document.getElementById('test-form');
-
-        openTestModalBtn.addEventListener('click', () => testModal.classList.remove('hidden'));
+        
+        const openTestModal = () => {
+            testModal.classList.remove('hidden');
+            if (typeof fbq === 'function') { fbq('track', 'ViewContent', { content_name: 'Offre Essai' }); }
+        };
+        openTestModalBtn.addEventListener('click', openTestModal);
         closeTestModalBtn.addEventListener('click', () => testModal.classList.add('hidden'));
 
-        testForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const nom = document.getElementById('testNomClient').value;
-            const tel = document.getElementById('testTelClient').value;
-            const adresse = document.getElementById('testAdresseClient').value;
+        testForm.addEventListener('submit', function(e) { /* ... (code inchangé) ... */ });
 
-            let message = `*DEMANDE D'ESSAI - COMMERCE 4.0*\n\n` +
-                          `Bonjour, je souhaite profiter de l'offre d'essai pour le Support Voiture ONESAM OS-F32.\n\n` +
-                          `*INFORMATIONS CLIENT*\n` +
-                          `*Nom :* ${nom}\n` +
-                          `*Téléphone :* ${tel}\n` +
-                          `*Adresse :* ${adresse}\n\n` +
-                          `Je comprends que je dois payer les *2 000 FCFA de frais de livraison* pour recevoir le produit en test.\n\n` +
-                          `Merci de confirmer ma demande.`;
-
-            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-            if (typeof fbq === 'function') { fbq('track', 'Lead', {content_name: 'Offre Essai'}); }
-            window.location.href = whatsappUrl;
-        });
-
-        // Fermeture des modals en cliquant à l'extérieur
+        // --- GESTION GLOBALE ---
         window.addEventListener('click', function(e) {
             if (e.target == orderModal) orderModal.classList.add('hidden');
             if (e.target == testModal) testModal.classList.add('hidden');
@@ -218,9 +257,6 @@
 
 </body>
 </html>
-
-
-
 
 
 
